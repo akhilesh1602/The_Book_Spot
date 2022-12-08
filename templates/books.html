@@ -1,0 +1,88 @@
+{% extends"layout.html" %}
+{% block body %}
+<br/><br/><br/><br/>
+
+
+<form action="/books_category" method="post" class="category">
+    <label for="category" class="category-label">Category</label>
+    <select name="category" id="category" class="category-select">
+      <option value="Novel">Novel</option>
+      <option value="Autobiography">Autobiography</option>
+      <option value="Thriller">Thriller</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Westerns">Westerns</option>
+      <option value="Fiction">Fiction</option>
+      
+    </select>
+    <input type="submit" value="Submit" class="category-submit"/>
+</form>
+<br/>
+<br/><br/>
+<br/>
+{% if books %}
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Searched Category Books</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+
+            {%for book in  books%}
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="static/image/{{ book.image }}" alt="">
+                </div>
+                <div class="content">
+                    <h3 >  {{ book.name  }}  </h3>
+                    <h2>by:-{{book.author}}</h2>
+
+                    
+                    <a href="{{  book.link }}" class="btn">Go to book</a>
+                </div>
+
+            </div>
+
+
+            {% endfor %}
+
+        </div>
+        
+
+    </div>
+
+</section>
+{%endif%}
+
+<br/>
+<br/>
+<div class="container">
+    <h1>Books...</h1>
+<br/>
+<form action="/books"  method="post" >
+    <input type="text"  placeholder="Name" name="name" class="books-data"> 
+    <input type="text"  placeholder="Author" name="author" class="books-data">
+    <input type="text"  placeholder="Category" name="category" class="books-data">
+    <input type="text"  placeholder="Language" name="language" class="books-data">
+    <input type="number"  placeholder="Arrival year" name="arrival" class="books-data"> 
+    <input type="text"  placeholder="Link" name="link" class="books-data">
+    <input type="text"  placeholder="Image" name="image" class="books-data">
+    <input type="submit" value="Add Book" class="btn" class="books-data">
+
+</form>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Spot</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> TheBookSpot </a>
+
+        
+        <!--<form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>-->
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="/">home</a>
+            <a href="/#top-50-books">top-50-books</a>
+            <a href="/#arrivals">arrivals</a>
+            <!--<a href="/#reviews">reviews</a>-->
+            <a  href="/recommender">Recommender</a>
+            <a  href="/books">Books</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+
+<!-- login form  -->
+
+<!--<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+
+</div>-->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>There is no friend as loyal as a Book</h3>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-1.png')}}" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-2.png')}}" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-3.png')}}" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-4.png')}}" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-5.png')}}" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="{{url_for('static', filename='image/book-6.png')}}" alt=""></a>
+            </div>
+            <img src="{{url_for('static', filename='image/stand.png')}}" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    {% block body %} {% endblock %}
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="/"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="/#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+                <a href="/#arrivals"> <i class="fas fa-arrow-right"></i> arrivals </a>
+                <!--<a href="/#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>-->
+                <a href="/recommender"> <i class="fas fa-arrow-right"></i> recommender </a>
+                <a  href="/books"><i class="fas fa-arrow-right"></i>Books</a>
+            </div>
+    
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> xyz@gmail.com </a>
+                <img src="image/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+    
+    </section>
+    
+    <!-- footer section ends -->
+    
+    <!-- loader  -->
+    
+    <!--<div class="loader-container">
+        <img src="      {{url_for('static', filename='image/loader-img.gif')}}     " alt="">
+    </div>-->
+    
+    
+    
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!-- custom js file link  -->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    
+    </body>
+    </html>
+   
+
+
+
+    
