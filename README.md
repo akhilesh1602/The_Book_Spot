@@ -11,4 +11,12 @@
 * Description of Book
 * Section for New Arrivals
 * Section for Post a Book with category
+## Snapshots :
 
+
+![Screenshot 2023-08-03 220054](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/f404255b-5e29-453c-9e80-ed95a7f68c58)
+![Screenshot 2023-08-03 220113](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/444349a3-b24b-43c2-a5d5-a26f708fd7c6)
+![Screenshot 2023-08-03 220131](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/e7fedfc5-684a-455b-b389-ab9b648854c5)
+![Screenshot 2023-08-03 220210](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/dc6587ce-0450-446b-9736-edb0fe7660ab)
+![Screenshot 2023-08-03 220253](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/eb3f882d-b7b1-4035-8545-a74360b44d8e)
+![Screenshot 2023-08-03 220330](https://github.com/akhilesh1602/The_Book_Spot/assets/115264506/ab935497-7769-4ca6-848e-7f7cd2fa7c6c)
